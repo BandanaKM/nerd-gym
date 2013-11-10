@@ -28,7 +28,7 @@
     <%= f.number_field :duration %>
   </div>
   <div class="field">
-    <%= f.hidden_field :workout_id %>
+    <%= f.hidden_field :workout_id, :value => @workout.id %>
   </div>
   <div class="actions">
     <%= f.submit %>

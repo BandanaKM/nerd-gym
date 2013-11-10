@@ -9,6 +9,22 @@
   <strong>User:</strong>
   <%= @workout.user_id %>
 </p>
+<table>
+  <tr>
+    <th> Name </th>
+    <th> Reps </th> 
+    <th> Weight </th>
+    <th> Duration </th>
+  </tr> 
+<% @workout.exercises.each do |exercise| %> 
+  <tr>
+    <td><%= exercise.name%></td>
+    <td><%= exercise.reps %></td>
+    <td><%= exercise.weight %></td>
+    <td><%= exercise.duration %></td>
+  </tr>
+<% end %> 
+</table>
 
 <%= link_to 'Edit', edit_workout_path(@workout) %> |
 <%= link_to 'Back', workouts_path %>

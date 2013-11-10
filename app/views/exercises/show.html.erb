@@ -27,4 +27,6 @@
 
 <%= link_to 'Edit', edit_exercise_path(@exercise) %> |
 <%= link_to 'Back', exercises_path %> |
-<%= link_to 'Add Another Exercise', edit_workout_path(@exercise.workout_id) %>
+<%= link_to 'Add Another Exercise', edit_workout_path(@exercise.workout_id) %> |
+<%= link_to 'Show Workout', workout_path(@exercise.workout_id) %> |
+<%= link_to 'All Workouts', workouts_path %> 

@@ -20,6 +20,7 @@ class WorkoutsController < ApplicationController
   # GET /workouts/1/edit
   def edit
     @exercise = Exercise.new
+    raise params.inspect
   end
 
   # POST /workouts
